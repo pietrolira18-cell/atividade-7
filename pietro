@@ -1,0 +1,35 @@
+nome = input ("Digite seu nome")
+print (" filme the menu")
+print ("filme mario")
+print("filme sonic")
+filme = input ("Digite seu filme")
+if filme ==" mario":
+     print("boa")
+if filme =="filme sonic ":
+    print("boa")
+if filme =="the menu":
+    print ("boa")
+valor = 30.00
+quantidadeDeingressos = input("Digite quantos ingressos voce escolheu")
+print("forma de pagamento cartão de credito/cartão de debito/ pix")
+pagamento = input ("Digite a forma de pagamento")
+if pagamento =="credito":
+    print("vamo")
+if pagamento =="debito":
+    print("vamo")
+if pagamento =="pix":
+    print("vamo")
+print("O valor do ingresso para o filme" + str(valor) + ". Aproveite o filme!")
+valor = int(input())
+
+
+
+    
+
+
+
+
+
+
+
+
