@@ -1,0 +1,18 @@
+print ("Bem vindo")
+
+print ("alimento batata")
+print ("alimento pastel")
+print ("alimento suco")
+print ("alimento refri")
+alimento = input ("Digite seu alimento")
+if alimento == "batata":
+    print("boa escolha")
+if alimento == "batata":
+    print("boa eescolha")
+if alimento == "batata":
+    print ("boa escolha")
+if alimento == "batata":
+    print ("boa escolha")
+
+
+
