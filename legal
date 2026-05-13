@@ -1,0 +1,245 @@
+ #exercio 1
+ 
+aluno1 = input("primeiro aluno: ") 
+aluno2 = input("segundo aluno: ") 
+ 
+if aluno1 > aluno2: 
+    print(f"{aluno1} e o maior!") 
+elif aluno1 < aluno2: 
+    print(f"{aluno2 }e o maior!") 
+     
+#exercio 2 
+valor = float(input("valor: ")) 
+ 
+if valor >=0: 
+    print("0 valor positivo") 
+else: 
+    print("0 valor e negativo.") 
+     
+     #EXERCICO3
+    letra = input("Digite F ou M: ").upper() 
+     
+if letra == "F": 
+    print("F - Feminino") 
+elif letra == "M": 
+    print("M - Masculino") 
+else: 
+    print("Sexo Inválido") 
+     
+    # 4 
+    letra = input("Digite uma letra: ").lower() 
+     
+if letra in "aeiou": 
+    print("Vogal") 
+else: 
+    print("Consoante") 
+     
+     
+    #5 
+    nota1 = float(input("Digite a primeira nota: ")) 
+nota2 = float(input("Digite a segunda nota: ")) 
+ 
+media = (nota1 + nota2) / 2 
+ 
+if media == 10: 
+    print("Aprovado com Distinção") 
+elif media >= 7: 
+    print("Aprovado") 
+else: 
+    print("Reprovado") 
+     
+    #6 
+    num1 = float(input("Digite o primeiro número: ")) 
+num2 = float(input("Digite o segundo número: ")) 
+num3 = float(input("Digite o terceiro número: ")) 
+ 
+if num1 >= num2 and num1 >= num3: 
+    print("O maior número é:", num1) 
+elif num2 >= num1 and num2 >= num3: 
+    print("O maior número é:", num2) 
+else: 
+    print("O maior número é:", num3) 
+ 
+    #7  
+    n1 = int(input("Digite um número: ")) 
+n2 = int(input("Digite outro número: ")) 
+n3 = int(input("Digite mais um número: ")) 
+ 
+print("Maior:", max(n1, n2, n3)) 
+print("Menor:", min(n1, n2, n3)) 
+
+#8
+p1 = float(input("Preço do primeiro produto: ")) 
+p2 = float(input("Preço do segundo produto: ")) 
+p3 = float(input("Preço do terceiro produto: ")) 
+ 
+menor = min(p1, p2, p3) 
+ 
+print("Você deve comprar o produto que custa:", menor)
+
+#9
+n1 = int(input())
+n2 = int(input())
+n3 = int(input())
+
+if n1 < n2:
+    n1, n2 = n2, n1
+if n1 < n3:
+    n1, n3 = n3, n1
+if n2 < n3:
+    n2, n3 = n3, n2
+
+print(n1)
+print(n2)
+print(n3)
+
+#10
+turno = input()
+
+if turno == "M":
+    print("Bom Dia!")
+elif turno == "V":
+    print("Boa Tarde!")
+elif turno == "N":
+    print("Boa Noite!")
+else:
+    print("Valor Inválido!")
+
+    #11
+    salario = float(input())
+
+if salario <= 280:
+    aumento = salario * 0.20
+elif salario <= 700:
+    aumento = salario * 0.15
+elif salario <= 1500:
+    aumento = salario * 0.10
+else:
+    aumento = salario * 0.05
+
+novo_salario = salario + aumento
+
+print(salario)
+print(aumento)
+print(novo_salario)
+
+#12
+valor_hora = float(input())
+horas = float(input())
+
+salario_bruto = valor_hora * horas
+
+if salario_bruto <= 900:
+    desconto = 0
+elif salario_bruto <= 1500:
+    desconto = salario_bruto * 0.05
+elif salario_bruto <= 2500:
+    desconto = salario_bruto * 0.10
+else:
+    desconto = salario_bruto * 0.20
+
+sindicato = salario_bruto * 0.03
+fgts = salario_bruto * 0.11
+
+salario_liquido = salario_bruto - (desconto + sindicato)
+
+print(salario_bruto)
+print(desconto)
+print(sindicato)
+print(salario_liquido)
+print(fgts)
+#13
+dia = int(input())
+
+if dia == 1:
+    print("Domingo")
+elif dia == 2:
+    print("Segunda")
+elif dia == 3:
+    print("Terça")
+elif dia == 4:
+    print("Quarta")
+elif dia == 5:
+    print("Quinta")
+elif dia == 6:
+    print("Sexta")
+elif dia == 7:
+    print("Sábado")
+else:
+    print("Valor inválido")
+
+    #14
+    n1 = float(input())
+n2 = float(input())
+
+media = (n1 + n2) / 2
+
+if media >= 9:
+    conceito = "A"
+elif media >= 7.5:
+    conceito = "B"
+elif media >= 6:
+    conceito = "C"
+elif media >= 4:
+    conceito = "D"
+else:
+    conceito = "E"
+
+print(n1)
+print(n2)
+print(media)
+print(conceito)
+
+if conceito in "ABC":
+    print("APROVADO")
+else:
+    print("REPROVADO")
+
+    #15
+    a = float(input())
+b = float(input())
+c = float(input())
+
+if a + b > c and a + c > b and b + c > a:
+
+    if a == b and b == c:
+        print("Triângulo Equilátero")
+    elif a == b or a == c or b == c:
+        print("Triângulo Isósceles")
+    else:
+        print("Triângulo Escaleno")
+
+else:
+    print("Não forma triângulo")
+    #16
+    a = float(input())
+
+if a == 0:
+    print("Não é equação do segundo grau")
+else:
+    b = float(input())
+    c = float(input())
+
+    delta = b**2 - 4*a*c
+
+    if delta < 0:
+        print("Não possui raízes reais")
+    elif delta == 0:
+        x = -b / (2*a)
+        print(x)
+    else:
+        x1 = (-b + delta**0.5) / (2*a)
+        x2 = (-b - delta**0.5) / (2*a)
+        print(x1)
+        print(x2)
+
+        #17
+        ano = int(input())
+
+if (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0):
+    print("Ano bissexto")
+else:
+    print("Não é bissexto")
+    
+
+
